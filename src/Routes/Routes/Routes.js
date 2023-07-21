@@ -3,6 +3,8 @@ import Main from "../../Layout/Main"
 import Home from "../../Pages/Home/Home/Home"
 import Login from "../../Pages/Login/Login"
 import Appointment from "../../Pages/Appointment/Appointment/Appointment"
+import Signup from "../../Signup/Signup"
+import Dashboard from "../../Pages/Dashboard/Dashboard/Dashboard"
 
  export const router = createBrowserRouter([
     {
@@ -21,6 +23,14 @@ import Appointment from "../../Pages/Appointment/Appointment/Appointment"
             path:'/login',
             element:<Login></Login>
         },
+        {
+            path:'/signup',
+            element:<Signup></Signup>
+        },
       ]
+    },
+    {
+      path:"/dashboard",
+      element: <Dashboard></Dashboard>
     }
 ])
